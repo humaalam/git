@@ -41,13 +41,6 @@ class ParseFile(object):
         print(amount)
         return amount
 
-
-    def get_file_length(self):
-        """
-        :return: length of list_data attribute of ParseFile
-        """
-        return self.list_data.__len__()
-
 def my_script(filename,account):
     print(filename)
     input_file = ParseFile(filename)

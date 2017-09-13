@@ -34,9 +34,9 @@ class ParseFile(object):
         amount=0
         for row_data in self.list_data:
             if row_data[0]==account :
-                amount+=row_data[1]
-            if row_data[2]==account :
                 amount-=row_data[1]
+            if row_data[2]==account :
+                amount+=row_data[1]
         
         print(amount)
         return amount
